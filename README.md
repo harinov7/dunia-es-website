@@ -1,2 +1,2 @@
 # dunia-es-website
-Make a website for home's business.
+A responsive website built for a small family-owned ice drink business.
