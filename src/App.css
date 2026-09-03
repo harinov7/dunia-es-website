@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+    --font-utama: 'Archivo Narrow'
+}
+
+@theme {
+    --font-utama: var(--font-utama)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.active-section {
+    border-bottom: 4px solid #00999f;
+    color: #00999f;
+}
+
+.select-section {
+    transition: 0.3s;
+
+    &:hover {
+        color: #00999f;
+    }
+}
+
+.card {
+    flex: 0 0 25%;
+    overflow: visible;
+}
+
+.card img {
+    width: 140%;
+    max-width: none;
+    filter: brightness(75%);
+    transition: filter 500ms;
+
+    &:hover{
+        filter: brightness(100%);
+    }
+}
+
+.container:has(.card:nth-child(1):hover) .card:nth-child(1)~.card {
+    transform: translateX(100px);
+}
+
+.container:has(.card:nth-child(2):hover) .card:nth-child(2)~.card {
+    transform: translateX(100px);
+}
+
+.container:has(.card:nth-child(3):hover) .card:nth-child(3)~.card {
+    transform: translateX(100px);
+}
+
